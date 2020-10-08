@@ -1,5 +1,7 @@
 var dia = prompt("Introduce un dia de la semana");
 
+dia = dia.toLocaleLowerCase();
+
 switch (dia) {
     case "lunes":
         console.log("Mañana sera Martes");
