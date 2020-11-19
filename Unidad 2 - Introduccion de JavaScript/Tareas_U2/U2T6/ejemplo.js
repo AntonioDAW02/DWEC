@@ -10,16 +10,11 @@
  * Se permite volver a jugar al usuario mediante un cuadro de confirmación
 */
 
-var min = 1;
-var max = 100;
-var cont = 0;
-var exit = false;
-
-var aleat = Math.floor(Math.random() * (max - min)) + min;
-
-var num_usu = prompt(
-    "Introduce un número aleatorio del 1 al 100, ámbos incluidos."
-);
+let cont = 0;
+let exit = false;
+let aleat = Math.floor(Math.random() * (100 - 1)) + 1;
+let res;
+var num_usu = prompt("Introduce un número aleatorio del 1 al 100, ámbos incluidos.");
 
 //console.log(aleat);
 
@@ -34,8 +29,8 @@ while (num_usu != aleat) {
 
         cont++;
     }
-    var tipo = typeof(num_usu);
-    console.log(tipo);
+    //var tipo = typeof(num_usu);
+    //console.log(tipo);
 
     if (num_usu < aleat) {
         alert("El número aleatorio es mayor");
@@ -43,9 +38,7 @@ while (num_usu != aleat) {
         alert("El número aleatorio es menor");
     }
 
-    num_usu = prompt(
-        "Introduce un número aleatorio del 1 al 100, ámbos incluidos."
-    );
+    num_usu = prompt("Introduce un número aleatorio del 1 al 100, ámbos incluidos.");
 
     num_usu = parseInt(num_usu);
 
@@ -56,9 +49,9 @@ if (aleat === num_usu) {
     alert("Acertaste el número!");
     alert("Numero de intentos: " + cont);
 
-    var r = confirm("¿Quieres continuar?");
+    res = confirm("¿Quieres continuar?");
 
-    if (r == true) {
+    if (res === true) {
         alert("You pressed OK!");
     } else {
         alert("You pressed Cancel!");

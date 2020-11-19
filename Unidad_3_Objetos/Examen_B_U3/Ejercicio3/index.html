@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ejercicio3.js"></script>
+</head>
+
+<body>
+    <form action="">
+        <label for="cadena">Introduce la cadena con formato <br>
+            municipio:cod_parcela@nombre|apellido1|apellido2</label>
+        <br><br>
+        <input type="text" name="cadena" id="cadena" />
+        <br><br>
+        <input type="submit" value="Enviar" onclick="dividirCadena()">
+    </form>
+    <div>
+        <p id="municipio"></p>
+        <p id="letrasParcela"></p>
+        <p id="numParcela"></p>
+        <p id="nombreApellidos"></p>
+    </div>
+</body>
+
+</html>
