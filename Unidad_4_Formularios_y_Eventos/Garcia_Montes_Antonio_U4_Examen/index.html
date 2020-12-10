@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form action="">
+        <label for="name">Nombre: </label>
+        <input type="text" name="name" id="name"/>
+        <br><br>
+        <label for="anyo">Año: </label>
+        <input type="number" name="anyo" id="anyo"/>
+        <br><br>
+        <label for="habilidad">Habilidades: </label>
+        <input type="text" name="habilidad" id="habilidad"/>
+        <br><br>
+        <label for="tirada">Tirada para herir</label>
+        <input type="text" name="tirada" id="tirada">
+        <br><br>
+        <label for="rol">Rol</label>
+        <select name="rol" id="rol">
+            <option value="">Seleccionar elemento</option>
+            <option value="lider" id="lider">Lider</option>
+            <option value="combate" id="combate">Combate</option>
+            <option value="comunicaciones" id="comunicaciones">Comunicaciones</option>
+            <option value="demoliciones" id="demoliciones">Demoliciones</option>
+            <option value="fanatico" id="fanatico">Fanático</option>
+        </select>
+        <br><br>
+        <label for="pass">Contraseña:</label>
+        <input type="password" name="pass" id="pass">
+        <br><br>
+        <input type="reset" value="Resetear">
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+    <div class="errores"></div>
+    <div class="ultima_tirada"></div>
+</body>
+</html>
