@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Web Storage API ejemplo aprenderaprogramar.com</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form name="formulario">
+        <p>Area de almacenamiento:<br>
+            <select name="" id="almacenamiento">
+                <option value="local">Local</option>
+                <option value="session">Session</option>
+            </select>
+        </p>
+        <p>Clave:<br>
+            <input type="text" name="clave" id="clave">
+        </p>
+        <p>Valor: <br>
+            <input type="text" name="valor" id="valor">
+        </p>
+        <br><br>
+        <input type="button" value="guardar" id="guardar"/>
+        <input type="button" value="eliminar" id="borrar"/>
+        <input type="button" value="refrescar" id="refrescar"/>
+        <input type="button" value="comprobar compatibilidad del navegador" id="comprobar_compatibilidad"/>
+    </form>
+    <br />
+    <p>CLAVES Y VALORES EN LOCAL STORAGE</p>
+    <textarea name="" id="datosDisponiblesLS" cols="30" rows="10"></textarea>
+    <br>
+    <p>CLAVES Y VALORES EN SESSION STORAGE</p>
+    <textarea name="" id="datosDisponiblesSS" cols="30" rows="10"></textarea>
+    <div class="compatibilidad"></div>
+</body>
+
+</html>
